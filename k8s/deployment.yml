@@ -14,7 +14,7 @@ spec:
       containers:
       - name: api-1
         imagePullPolicy: Never
-        image: api-1:v1
+        image: gcr.io/kubernetes-test-project-318013/api-1:v1
         resources:
           limits:
             memory: "128Mi"
@@ -38,7 +38,7 @@ spec:
       containers:
       - name: api-2
         imagePullPolicy: Never
-        image: api-2:v2
+        image: gcr.io/kubernetes-test-project-318013/api-2:v2
         resources:
           limits:
             memory: "128Mi"
