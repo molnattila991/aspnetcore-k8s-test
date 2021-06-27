@@ -21,4 +21,4 @@ services:
         ports:
             - 9095:80
         environment:
-            - API1_SERVICENAME="http://api-1/"
+            - API1_SERVICENAME=http://api-1/
