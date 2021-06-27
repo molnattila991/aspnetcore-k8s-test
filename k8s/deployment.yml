@@ -13,7 +13,6 @@ spec:
     spec:
       containers:
       - name: api-1
-        imagePullPolicy: Never
         image: gcr.io/kubernetes-test-project-318013/api-1:v1
         resources:
           limits:
@@ -37,7 +36,6 @@ spec:
     spec:
       containers:
       - name: api-2
-        imagePullPolicy: Never
         image: gcr.io/kubernetes-test-project-318013/api-2:v2
         resources:
           limits:
