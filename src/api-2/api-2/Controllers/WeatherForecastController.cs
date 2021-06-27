@@ -18,8 +18,9 @@ namespace api_2.Controllers
         {
             _logger = logger;
             http = new HttpClient();
-            var api1Service = Environment.GetEnvironmentVariable("API1_SERVICENAME");
-            http.BaseAddress = new Uri(api1Service);
+            string api1Service = Environment.GetEnvironmentVariable("API1_SERVICENAME");
+            Console.WriteLine(api1Service);
+            http.BaseAddress = new Uri(api1Service.Trim());
         }
 
         [HttpGet]
