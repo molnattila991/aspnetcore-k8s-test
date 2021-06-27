@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace api_2.Controllers
 {
     [ApiController]
-    [Route("")]
+    [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private readonly ILogger<WeatherForecastController> _logger;
