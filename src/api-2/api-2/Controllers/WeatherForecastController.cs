@@ -26,6 +26,7 @@ namespace api_2.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            Console.WriteLine("Hello");
             var result = await http.GetAsync("weatherforecast");
             return Ok(await result.Content.ReadAsStringAsync());
         }
