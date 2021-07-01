@@ -16,4 +16,4 @@
 - Be sure to use the proper docker registry (run command 'minikube docker-env' in your terminal)
 - Go into k8s folder
 - Run the following command "kubectl apply -f ./deployment.yml"
-- All deployment.yml and service.yml are merged into one deployment.yml file. The merge is not automatic, so in case of change on of any deployment of service file, you should update the merged deployment.yml file as well.
+- All deployment.yml and service.yml are merged into one deployment.yml file. The merge is not automatic, so in case of change of any deployment or service file, you should update the merged deployment.yml file as well.
